@@ -280,7 +280,7 @@
     macros {
     
         // AutoShift Helper- &AS main macro is chained to &AS_HT hold tap and &AS_Shifted macro - TailorKey
-        AS_Shifted_v1: AS_Shifted_v1 {
+        AS_Shifted_v1_TKZ: AS_Shifted_v1_TKZ {
             label = "&AS_SHIFTED_V1_TKZ";
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
@@ -294,7 +294,7 @@
         };
     
         // AutoShift (Assign &AS to a Key) - &AS main macro is chained to &AS_HT hold tap and &AS_Shifted macro - TailorKey
-        AS_v1: AS_v1 {
+        AS_v1_TKZ: AS_v1_TKZ {
             label = "&AS_V1_TKZ";
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
@@ -303,16 +303,16 @@
             bindings = <&macro_press>
                 , <&macro_param_1to1>
                 , <&macro_param_1to2>
-                , <&AS_HT_v2 A A>
+                , <&AS_HT_v2_TKZ A A>
                 , <&macro_pause_for_release>
                 , <&macro_release>
                 , <&macro_param_1to1>
                 , <&macro_param_1to2>
-                , <&AS_HT_v2 A A>;
+                , <&AS_HT_v2_TKZ A A>;
         };
     
         // Cursor Layer - Copy (Ctrl C) - TailorKey
-        cur_COPY_v1: cur_COPY_v1 {
+        cur_COPY_v1_TKZ: cur_COPY_v1_TKZ {
             label = "&CUR_COPY_V1_TKZ";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -320,7 +320,7 @@
         };
     
         // Cursor Layer - Cut (Ctrl X) - TailorKey
-        cur_CUT_v1: cur_CUT_v1 {
+        cur_CUT_v1_TKZ: cur_CUT_v1_TKZ {
             label = "&CUR_CUT_V1_TKZ";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -328,7 +328,7 @@
         };
     
         // Cursor Layer - Extent Line (seq) - TailorKey
-        cur_EXTEND_LINE_v1: cur_EXTEND_LINE_v1 {
+        cur_EXTEND_LINE_v1_TKZ: cur_EXTEND_LINE_v1_TKZ {
             label = "&CUR_EXTEND_LINE_V1_TKZ";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -338,7 +338,7 @@
         };
     
         // Cursor Layer - Extend Word (seq) - TailorKey
-        cur_EXTEND_WORD_v1: cur_EXTEND_WORD_v1 {
+        cur_EXTEND_WORD_v1_TKZ: cur_EXTEND_WORD_v1_TKZ {
             label = "&CUR_EXTEND_WORD_V1_TKZ";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -348,7 +348,7 @@
         };
     
         // Cursor Layer - Find (Ctrl F) - TailorKey
-        cur_FIND_v1: cur_FIND_v1 {
+        cur_FIND_v1_TKZ: cur_FIND_v1_TKZ {
             label = "&CUR_FIND_V1_TKZ";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -356,7 +356,7 @@
         };
     
         // Cursor Layer - Find Next (Ctrl G) - TailorKey
-        cur_FNEXT_v1: cur_FNEXT_v1 {
+        cur_FNEXT_v1_TKZ: cur_FNEXT_v1_TKZ {
             label = "&CUR_FNEXT_V1_TKZ";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -364,7 +364,7 @@
         };
     
         // Cursor Layer - Find Prev (Ctrl Shift G) - TailorKey
-        cur_FPREV_v1: cur_FPREV_v1 {
+        cur_FPREV_v1_TKZ: cur_FPREV_v1_TKZ {
             label = "&CUR_FPREV_V1_TKZ";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -372,7 +372,7 @@
         };
     
         // Cursor Layer - Paste (Ctrl V) - TailorKey
-        cur_PASTE_v1: cur_PASTE_v1 {
+        cur_PASTE_v1_TKZ: cur_PASTE_v1_TKZ {
             label = "&CUR_PASTE_V1_TKZ";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -380,7 +380,7 @@
         };
     
         // Cursor Layer - Redo (Ctrl Y) - TailorKey
-        cur_REDO_v1: cur_REDO_v1 {
+        cur_REDO_v1_TKZ: cur_REDO_v1_TKZ {
             label = "&CUR_REDO_V1_TKZ";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -388,7 +388,7 @@
         };
     
         // Cursor Layer - Selest All (Ctrl A) - TailorKey
-        cur_SELECT_ALL_v1: cur_SELECT_ALL_v1 {
+        cur_SELECT_ALL_v1_TKZ: cur_SELECT_ALL_v1_TKZ {
             label = "&CUR_SELECT_ALL_V1_TKZ";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -396,7 +396,7 @@
         };
     
         // Cursor Layer - Select Line (seq) - TailorKey
-        cur_SELECT_LINE_v1: cur_SELECT_LINE_v1 {
+        cur_SELECT_LINE_v1_TKZ: cur_SELECT_LINE_v1_TKZ {
             label = "&CUR_SELECT_LINE_V1_TKZ";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -407,7 +407,7 @@
         };
     
         // Cursor Layer - Select None (seq) - TailorKey
-        cur_SELECT_NONE_v1: cur_SELECT_NONE_v1 {
+        cur_SELECT_NONE_v1_TKZ: cur_SELECT_NONE_v1_TKZ {
             label = "&CUR_SELECT_NONE_V1_TKZ";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -420,7 +420,7 @@
         };
     
         // Cursor Layer - Select Word (seq) - TailorKey
-        cur_SELECT_WORD_v1: cur_SELECT_WORD_v1 {
+        cur_SELECT_WORD_v1_TKZ: cur_SELECT_WORD_v1_TKZ {
             label = "&CUR_SELECT_WORD_V1_TKZ";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -431,7 +431,7 @@
         };
     
         // Cursor Layer - Undo (Ctrl Z) - TailorKey
-        cur_UNDO_v1: cur_UNDO_v1 {
+        cur_UNDO_v1_TKZ: cur_UNDO_v1_TKZ {
             label = "&CUR_UNDO_V1_TKZ";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -439,7 +439,7 @@
         };
     
         // mod_tab_switcher_chord -  TailorKey
-        mod_tab_chord_v2: mod_tab_chord_v2 {
+        mod_tab_chord_v2_TKZ: mod_tab_chord_v2_TKZ {
             label = "&MOD_TAB_CHORD_V2_TKZ";
             compatible = "zmk,behavior-macro-two-param";
             #binding-cells = <2>;
@@ -450,11 +450,11 @@
                 , <&mo MACRO_PLACEHOLDER>
                 , <&macro_press>
                 , <&macro_param_1to1>
-                , <&mod_tab_v2 MACRO_PLACEHOLDER>
+                , <&mod_tab_v2_TKZ MACRO_PLACEHOLDER>
                 , <&macro_pause_for_release>
                 , <&macro_release>
                 , <&macro_param_1to1>
-                , <&mod_tab_v2 MACRO_PLACEHOLDER>
+                , <&mod_tab_v2_TKZ MACRO_PLACEHOLDER>
                 , <&macro_release>
                 , <&macro_param_2to1>
                 , <&mo MACRO_PLACEHOLDER>;
@@ -463,7 +463,7 @@
         // mod_tab_switcher - TailorKey
         // 
         // 
-        mod_tab_v2: mod_tab_v2 {
+        mod_tab_v2_TKZ: mod_tab_v2_TKZ {
             label = "&MOD_TAB_V2_TKZ";
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
@@ -481,7 +481,7 @@
         };
     
         // macro string1 sample - Magic Layer F1 - Text output sample macro 1 "¡Hola!" - TailorKey
-        mstr1_v1: mstr1_v1 {
+        mstr1_v1_TKZ: mstr1_v1_TKZ {
             label = "&MSTR1_V1_TKZ";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -510,7 +510,7 @@
         };
     
         // macro string2 sample - Magic Layer F2 - Text output sample macro 2 "grammar check: <paste>" - TailorKey
-        mstr2_v1: mstr2_v1 {
+        mstr2_v1_TKZ: mstr2_v1_TKZ {
             label = "&MSTR2_V1_TKZ";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -541,16 +541,16 @@
 
         // AutoShift Helper - &AS main macro is chained to &AS_HT hold tap and &AS_Shifted macro. For faster typists, it is recommended to decrease the tapping-term-ms value. A suggested value is 135 ms.
         // More: https://github.com/nickcoutsos/keymap-editor/wiki/Autoshift-using-ZMK-behaviors
-        AS_HT_v2: AS_HT_v2 {
+        AS_HT_v2_TKZ: AS_HT_v2_TKZ {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <190>;
-            bindings = <&AS_Shifted_v1>, <&kp>;
+            bindings = <&AS_Shifted_v1_TKZ>, <&kp>;
             flavor = "tap-preferred";
         };
 
         // Capsword helper - tap for caps_word - hold for key press
-        CAPSWord_v1: CAPSWord_v1 {
+        CAPSWord_v1_TKZ: CAPSWord_v1_TKZ {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -559,7 +559,7 @@
 
         // Homerow Mod for the left index finger - TailorKey.
         // For advanced tuning of HRM values, see: https://docs.google.com/spreadsheets/d/1ESgObQelyz4lnKlfwLYsmofLJulOMK5RdGBsopLe2o8
-        HR_L2: HR_L2 {
+        HRM_left_index_v1_TKZ: HRM_left_index_v1_TKZ {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <170>;
@@ -572,7 +572,7 @@
         };
 
         // Homerow Mod for the left middle finger - TailorKey
-        HR_L3: HR_L3 {
+        HRM_left_middy_v1_TKZ: HRM_left_middy_v1_TKZ {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <210>;
@@ -585,7 +585,7 @@
         };
 
         // Homerow Mod for the left pinky - TailorKey
-        HR_L5: HR_L5 {
+        HRM_left_pinky_v1_TKZ: HRM_left_pinky_v1_TKZ {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <260>;
@@ -598,7 +598,7 @@
         };
 
         // Homerow Mod for the left ring finger 1 - TailorKey
-        HR_L4: HR_L4 {
+        HRM_left_ring_v1_TKZ: HRM_left_ring_v1_TKZ {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <240>;
@@ -611,7 +611,7 @@
         };
 
         // Homerow Mod for the right index finger - TailorKey
-        HR_R2: HR_R2 {
+        HRM_right_index_v1_TKZ: HRM_right_index_v1_TKZ {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <170>;
@@ -624,7 +624,7 @@
         };
 
         // Homerow Mod for the right middle finger - TailorKey
-        HR_R3: HR_R3 {
+        HRM_right_middy_v1_TKZ: HRM_right_middy_v1_TKZ {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <210>;
@@ -637,7 +637,7 @@
         };
 
         // Homerow Mod for the right pinky - TailorKey
-        HR_R5: HR_R5 {
+        HRM_right_pinky_v1_TKZ: HRM_right_pinky_v1_TKZ {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <260>;
@@ -651,7 +651,7 @@
 
         // Homerow Mod for the right ring 1 - TailorKey
         // 
-        HR_R4: HR_R4 {
+        HRM_right_ring_v1_TKZ: HRM_right_ring_v1_TKZ {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <240>;
@@ -664,7 +664,7 @@
         };
 
         // space_layer_access - TailorKey
-        space_v2: space_v2 {
+        space_v2_TKZ: space_v2_TKZ {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -675,7 +675,7 @@
         };
 
         // thumb_layer_access - TailorKey
-        thumb_v2: thumb_v2 {
+        thumb_v2_TKZ: thumb_v2_TKZ {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -691,70 +691,70 @@
       combos {
           compatible = "zmk,combos";
                   // Calls macro tab_switcher_gui_combo on Left T1/T4 - TailorKey
-        combo_alt_tab_switch_v1 {
+        combo_alt_tab_switch_v1_TKZ {
             timeout-ms = <50>;
             key-positions = <69 52>;
-            bindings = <&mod_tab_chord_v2 LALT 5>;
+            bindings = <&mod_tab_chord_v2_TKZ LALT 5>;
         };
 
         // Calls macro tab_switcher_ctrl_combo on Left T4/T5 - TailorKey
-        combo_ctrl_tab_switch_v1 {
+        combo_ctrl_tab_switch_v1_TKZ {
             timeout-ms = <50>;
             key-positions = <69 70>;
-            bindings = <&mod_tab_chord_v2 LCTRL 5>;
+            bindings = <&mod_tab_chord_v2_TKZ LCTRL 5>;
         };
 
         // sticky "meh" modifiers (Alt + Ctrl + Shift) - TailorKey
-        combo_sticky_meh_rght_v1 {
+        combo_sticky_meh_rght_v1_TKZ {
             timeout-ms = <50>;
             key-positions = <73 74>;
             bindings = <&sk LA(LC(LSHFT))>;
         };
 
         // sticky "hyper" modifiers (Win + Alt + Ctrl + Shift) - TailorKey
-        combo_sticky_hyp_rght_v1 {
+        combo_sticky_hyp_rght_v1_TKZ {
             timeout-ms = <50>;
             key-positions = <74 57>;
             bindings = <&sk LG(LA(LC(LSHFT)))>;
         };
 
         // F12 on RH_C6 and RH_R1+R2 - TailorKey
-        combo_F12_v1 {
+        combo_F12_v1_TKZ {
             timeout-ms = <50>;
             key-positions = <9 21>;
             bindings = <&kp F12>;
         };
 
         // F11 on RH_C5 and RH_R1+R2 - TailorKey
-        combo_F11_v1 {
+        combo_F11_v1_TKZ {
             timeout-ms = <50>;
             key-positions = <8 20>;
             bindings = <&kp F11>;
         };
 
         // capslock when pressing both T1's - TailorKey
-        combo_capslock_v1 {
+        combo_capslock_v1_TKZ {
             timeout-ms = <50>;
             key-positions = <52 57>;
             bindings = <&kp CAPS>;
         };
 
         // sticky "AltGr" left - TailorKey
-        combo_sticky_AltGr_left_v1 {
+        combo_sticky_AltGr_left_v1_TKZ {
             timeout-ms = <50>;
             key-positions = <70 53>;
             bindings = <&sk RALT>;
         };
 
         // sticky "AltGr" right - TailorKey
-        combo_sticky_AltGr_right_v1 {
+        combo_sticky_AltGr_right_v1_TKZ {
             timeout-ms = <50>;
             key-positions = <56 73>;
             bindings = <&sk RALT>;
         };
 
         // toggle gaming layer - TailorKey
-        combo_gaming_layer_v1 {
+        combo_gaming_layer_v1_TKZ {
             timeout-ms = <50>;
             key-positions = <54 71>;
             bindings = <&tog 5>;
@@ -770,12 +770,12 @@
 
         layer_Homerow_Mods {
             bindings = <
-&kp F1                 &kp F2          &kp F3          &kp F4         &kp F5                                                                                                                                    &kp F6         &kp F7         &kp F8          &kp F9             &kp F10
-&kp EQUAL              &kp N1          &kp N2          &kp N3         &kp N4         &kp N5                                                                                                             &kp N6  &kp N7         &kp N8         &kp N9          &kp N0             &kp MINUS
-&kp TAB                &kp Q           &kp W           &kp E          &kp R          &kp T                                                                                                              &kp Y   &kp U          &kp I          &kp O           &kp P              &kp BSLH
-&kp ESC                &HR_L5 LSHFT A  &HR_L4 LCTRL S  &HR_L3 LALT D  &HR_L2 LGUI F  &kp G                                                                                                              &kp H   &HR_R2 RGUI J  &HR_R3 RALT K  &HR_R4 RCTRL L  &HR_R5 RSHFT SEMI  &kp SQT
-&kp GRAVE              &kp Z           &kp X           &kp C          &kp V          &kp B  &kp LGUI(SPACE)     &kp LCTRL    &lower    &kp LGUI  &kp RCTRL        &CAPSWord_v1 RSHFT MACRO_PLACEHOLDER  &kp N   &kp M          &kp COMMA      &kp DOT         &kp FSLH           &kp PG_UP
- &magic LAYER_Magic 0  &kp HOME        &kp END         &kp LEFT       &kp RIGHT             &space_v2 4 SPACE   &kp DEL      &kp LALT  &kp RALT  &thumb_v2 7 RET  &thumb_v2 3 BSPC                              &kp UP         &kp DOWN       &kp LBKT        &kp RBKT           &kp PG_DN
+               &kp F1                         &kp F2                        &kp F3                          &kp F4                          &kp F5                                                                                                                                                                                   &kp F6                           &kp F7                         &kp F8                             &kp F9    &kp F10
+            &kp EQUAL                         &kp N1                        &kp N2                          &kp N3                          &kp N4  &kp N5                                                                                                                                          &kp N6                           &kp N7                           &kp N8                         &kp N9                             &kp N0  &kp MINUS
+              &kp TAB                          &kp Q                         &kp W                           &kp E                           &kp R   &kp T                                                                                                                                           &kp Y                            &kp U                            &kp I                          &kp O                              &kp P   &kp BSLH
+              &kp ESC  &HRM_left_pinky_v1_TKZ LSHFT A  &HRM_left_ring_v1_TKZ LCTRL S  &HRM_left_middy_v1_TKZ LALT D  &HRM_left_index_v1_TKZ LGUI F   &kp G                                                                                                                                           &kp H  &HRM_right_index_v1_TKZ RGUI J  &HRM_right_middy_v1_TKZ RALT K  &HRM_right_ring_v1_TKZ RCTRL L  &HRM_right_pinky_v1_TKZ RSHFT SEMI    &kp SQT
+            &kp GRAVE                          &kp Z                         &kp X                           &kp C                           &kp V   &kp B  &CAPSWord_v1_TKZ LSHFT MACRO_PLACEHOLDER  &kp LCTRL    &lower  &kp LGUI            &kp RCTRL  &CAPSWord_v1_TKZ RSHFT MACRO_PLACEHOLDER   &kp N                            &kp M                        &kp COMMA                        &kp DOT                           &kp FSLH  &kp PG_UP
+ &magic LAYER_Magic 0                       &kp HOME                       &kp END                        &kp LEFT                       &kp RIGHT                              &space_v2_TKZ 4 SPACE    &kp DEL  &kp LALT  &kp RALT  &thumb_v2_TKZ 7 RET                     &thumb_v2_TKZ 3 BSPC                                   &kp UP                         &kp DOWN                       &kp LBKT                           &kp RBKT  &kp PG_DN
             >;
         };
 
@@ -793,11 +793,11 @@
         layer_Autoshift {
             bindings = <
                &trans         &trans         &trans         &trans         &trans                                                                                       &trans            &trans           &trans           &trans            &trans
-     &AS_v1 EQUAL  &AS_v1 N1  &AS_v1 N2  &AS_v1 N3  &AS_v1 N4  &AS_v1 N5                                                  &AS_v1 N6  &AS_v1 N7     &AS_v1 N8    &AS_v1 N9    &AS_v1 N0  &AS_v1 MINUS
-               &trans   &AS_v1 Q   &AS_v1 W   &AS_v1 E   &AS_v1 R   &AS_v1 T                                                   &AS_v1 Y   &AS_v1 U      &AS_v1 I     &AS_v1 O     &AS_v1 P   &AS_v1 BSLH
-               &trans   &AS_v1 A   &AS_v1 S   &AS_v1 D   &AS_v1 F   &AS_v1 G                                                   &AS_v1 H   &AS_v1 J      &AS_v1 K     &AS_v1 L  &AS_v1 SEMI    &AS_v1 SQT
-     &AS_v1 GRAVE   &AS_v1 Z   &AS_v1 X   &AS_v1 C   &AS_v1 V   &AS_v1 B  &trans  &trans  &trans  &trans  &trans  &trans   &AS_v1 N   &AS_v1 M  &AS_v1 COMMA   &AS_v1 DOT  &AS_v1 FSLH            &trans
- &magic LAYER_Magic 0         &trans         &trans         &trans         &trans                 &trans  &trans  &trans  &trans  &trans  &trans                        &trans            &trans  &AS_v1 LBKT  &AS_v1 RBKT            &trans
+     &AS_v1_TKZ EQUAL  &AS_v1_TKZ N1  &AS_v1_TKZ N2  &AS_v1_TKZ N3  &AS_v1_TKZ N4  &AS_v1_TKZ N5                                                  &AS_v1_TKZ N6  &AS_v1_TKZ N7     &AS_v1_TKZ N8    &AS_v1_TKZ N9    &AS_v1_TKZ N0  &AS_v1_TKZ MINUS
+               &trans   &AS_v1_TKZ Q   &AS_v1_TKZ W   &AS_v1_TKZ E   &AS_v1_TKZ R   &AS_v1_TKZ T                                                   &AS_v1_TKZ Y   &AS_v1_TKZ U      &AS_v1_TKZ I     &AS_v1_TKZ O     &AS_v1_TKZ P   &AS_v1_TKZ BSLH
+               &trans   &AS_v1_TKZ A   &AS_v1_TKZ S   &AS_v1_TKZ D   &AS_v1_TKZ F   &AS_v1_TKZ G                                                   &AS_v1_TKZ H   &AS_v1_TKZ J      &AS_v1_TKZ K     &AS_v1_TKZ L  &AS_v1_TKZ SEMI    &AS_v1_TKZ SQT
+     &AS_v1_TKZ GRAVE   &AS_v1_TKZ Z   &AS_v1_TKZ X   &AS_v1_TKZ C   &AS_v1_TKZ V   &AS_v1_TKZ B  &trans  &trans  &trans  &trans  &trans  &trans   &AS_v1_TKZ N   &AS_v1_TKZ M  &AS_v1_TKZ COMMA   &AS_v1_TKZ DOT  &AS_v1_TKZ FSLH            &trans
+ &magic LAYER_Magic 0         &trans         &trans         &trans         &trans                 &trans  &trans  &trans  &trans  &trans  &trans                        &trans            &trans  &AS_v1_TKZ LBKT  &AS_v1_TKZ RBKT            &trans
             >;
         };
 
@@ -805,10 +805,10 @@
             bindings = <
                 &none                   &none                    &none                    &none              &none                                                                                                                                                                                      &none              &none              &none      &none        &none
               &kp ESC                 &kp RET                &kp SPACE                  &kp TAB            &kp DEL            &kp INS                                                                                                                                               &kp INS           &kp DEL            &kp TAB          &kp SPACE    &kp RET      &kp ESC
-            &kp LC(E)               &sk LSHFT         &cur_REDO_v1         &cur_UNDO_v1           &kp BSPC    &cur_CUT_v1                                                                                                                                       &cur_CUT_v1          &kp BSPC   &cur_UNDO_v1   &cur_REDO_v1  &sk LSHFT    &kp LC(K)
-            &kp LC(L)                &kp LGUI                 &kp LALT                &kp LCTRL          &kp LSHFT   &cur_COPY_v1                                                                                                                                      &cur_COPY_v1          &kp LEFT             &kp UP           &kp DOWN  &kp RIGHT    &kp LC(L)
-            &kp LC(J)  &cur_SELECT_ALL_v1  &cur_SELECT_LINE_v1  &cur_SELECT_WORD_v1   &cur_FIND_v1  &cur_PASTE_v1  &mod_tab_v2 LALT   &mod_tab_v2 LGUI  &kp PSCRN  &cur_SELECT_NONE_v1  &cur_EXTEND_LINE_v1  &cur_EXTEND_WORD_v1  &cur_PASTE_v1          &kp HOME          &kp PG_UP          &kp PG_DN    &kp END    &kp LC(J)
- &magic LAYER_Magic 0       &cur_FPREV_v1  &cur_EXTEND_LINE_v1  &cur_EXTEND_WORD_v1  &cur_FNEXT_v1                                    &none  &mod_tab_v2 LCTRL  &kp LG(D)   &cur_SELECT_ALL_v1  &cur_SELECT_LINE_v1  &cur_SELECT_WORD_v1                     &cur_FIND_v1  &cur_FPREV_v1  &cur_FNEXT_v1  &kp LC(H)  &kp LG(DOT)
+            &kp LC(E)               &sk LSHFT         &cur_REDO_v1_TKZ         &cur_UNDO_v1_TKZ           &kp BSPC    &cur_CUT_v1_TKZ                                                                                                                                       &cur_CUT_v1_TKZ          &kp BSPC   &cur_UNDO_v1_TKZ   &cur_REDO_v1_TKZ  &sk LSHFT    &kp LC(K)
+            &kp LC(L)                &kp LGUI                 &kp LALT                &kp LCTRL          &kp LSHFT   &cur_COPY_v1_TKZ                                                                                                                                      &cur_COPY_v1_TKZ          &kp LEFT             &kp UP           &kp DOWN  &kp RIGHT    &kp LC(L)
+            &kp LC(J)  &cur_SELECT_ALL_v1_TKZ  &cur_SELECT_LINE_v1_TKZ  &cur_SELECT_WORD_v1_TKZ   &cur_FIND_v1_TKZ  &cur_PASTE_v1_TKZ  &mod_tab_v2_TKZ LALT   &mod_tab_v2_TKZ LGUI  &kp PSCRN  &cur_SELECT_NONE_v1_TKZ  &cur_EXTEND_LINE_v1_TKZ  &cur_EXTEND_WORD_v1_TKZ  &cur_PASTE_v1_TKZ          &kp HOME          &kp PG_UP          &kp PG_DN    &kp END    &kp LC(J)
+ &magic LAYER_Magic 0       &cur_FPREV_v1_TKZ  &cur_EXTEND_LINE_v1_TKZ  &cur_EXTEND_WORD_v1_TKZ  &cur_FNEXT_v1_TKZ                                    &none  &mod_tab_v2_TKZ LCTRL  &kp LG(D)   &cur_SELECT_ALL_v1_TKZ  &cur_SELECT_LINE_v1_TKZ  &cur_SELECT_WORD_v1_TKZ                     &cur_FIND_v1_TKZ  &cur_FPREV_v1_TKZ  &cur_FNEXT_v1_TKZ  &kp LC(H)  &kp LG(DOT)
             >;
         };
 
@@ -818,8 +818,8 @@
  &kp GRAVE   &kp LBKT   &kp LPAR   &kp RPAR  &kp RBKT    &kp DOT                                                              &none         &sk RSHFT         &sk RCTRL                 &sk RALT                 &sk RGUI                   &none
   &kp EXCL  &kp COMMA   &kp LBRC   &kp RBRC  &kp SEMI  &kp QMARK                                                          &kp GRAVE          &kp LEFT            &kp UP                 &kp DOWN                &kp RIGHT                 &kp END
   &kp HASH  &kp CARET  &kp EQUAL  &kp UNDER  &kp DLLR   &kp STAR                                                            &kp DQT          &kp BSPC           &kp TAB                &kp SPACE                  &kp RET                &kp HOME
- &kp TILDE     &kp LT   &kp PIPE  &kp MINUS    &kp GT   &kp FSLH   &kp BSLH    &kp DOT  &kp STAR   &none   &none   &none    &kp SQT           &kp DEL       &kp LS(TAB)  &cur_SELECT_WORD_v1  &cur_SELECT_LINE_v1  &cur_SELECT_ALL_v1
-     &none   &kp AMPS    &kp SQT    &kp DQT  &kp PLUS             &kp PRCNT  &kp COLON    &kp AT   &none   &none   &none             &cur_UNDO_v1  &cur_REDO_v1  &cur_EXTEND_WORD_v1  &cur_EXTEND_LINE_v1                   &none
+ &kp TILDE     &kp LT   &kp PIPE  &kp MINUS    &kp GT   &kp FSLH   &kp BSLH    &kp DOT  &kp STAR   &none   &none   &none    &kp SQT           &kp DEL       &kp LS(TAB)  &cur_SELECT_WORD_v1_TKZ  &cur_SELECT_LINE_v1_TKZ  &cur_SELECT_ALL_v1_TKZ
+     &none   &kp AMPS    &kp SQT    &kp DQT  &kp PLUS             &kp PRCNT  &kp COLON    &kp AT   &none   &none   &none             &cur_UNDO_v1_TKZ  &cur_REDO_v1_TKZ  &cur_EXTEND_WORD_v1_TKZ  &cur_EXTEND_LINE_v1_TKZ                   &none
             >;
         };
 
@@ -849,16 +849,16 @@
             bindings = <
  &trans          &trans          &trans          &trans           &trans                                                                                                        &trans        &trans          &trans           &trans    &trans
  &trans          &trans          &trans          &trans           &trans             &trans                                                                     &trans       &sk LSHFT     &sk LCTRL        &sk LALT         &sk LGUI    &trans
- &trans          &trans  &msc SCRL_LEFT    &mmv MOVE_UP  &msc SCRL_RIGHT    &cur_CUT_v1                                                            &cur_CUT_v1  &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT    &trans
- &trans    &msc SCRL_UP  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &cur_COPY_v1                                                           &cur_COPY_v1           &none         &none           &none        &kp K_APP    &trans
- &trans  &msc SCRL_DOWN           &none           &none            &none  &cur_PASTE_v1  &mkp MCLK  &kp K_APP  &mkp MB5  &trans  &trans  &trans  &cur_PASTE_v1  &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &trans
+ &trans          &trans  &msc SCRL_LEFT    &mmv MOVE_UP  &msc SCRL_RIGHT    &cur_CUT_v1_TKZ                                                            &cur_CUT_v1_TKZ  &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT    &trans
+ &trans    &msc SCRL_UP  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &cur_COPY_v1_TKZ                                                           &cur_COPY_v1_TKZ           &none         &none           &none        &kp K_APP    &trans
+ &trans  &msc SCRL_DOWN           &none           &none            &none  &cur_PASTE_v1_TKZ  &mkp MCLK  &kp K_APP  &mkp MB5  &trans  &trans  &trans  &cur_PASTE_v1_TKZ  &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &trans
  &trans          &trans          &trans          &trans           &trans                     &mkp LCLK  &mkp RCLK  &mkp MB4  &trans  &trans  &trans                          &mkp LCLK     &mkp RCLK       &mkp MCLK         &mkp MB4  &mkp MB5
             >;
         };
 
         layer_Magic {
             bindings = <
- &mstr1_v1    &mstr2_v1            &none            &none            &none                                                                                  &none   &none   &none  &bt BT_CLR  &bt BT_CLR_ALL
+ &mstr1_v1_TKZ    &mstr2_v1_TKZ            &none            &none            &none                                                                                  &none   &none   &none  &bt BT_CLR  &bt BT_CLR_ALL
          &to 0            &to 1            &to 2            &none            &none            &none                                                         &none   &none   &none   &none       &none           &none
          &none  &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG                                                         &none   &none   &none   &none       &none           &none
    &bootloader  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF                                                         &none   &none   &none   &none       &none     &bootloader
