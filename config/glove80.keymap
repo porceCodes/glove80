@@ -767,15 +767,15 @@
     keymap {
         compatible = "zmk,keymap";
 
-
+        // porce
         layer_Homerow_Mods {
             bindings = <
-&kp F1                 &kp F2          &kp F3          &kp F4         &kp F5                                                                                                                                    &kp F6         &kp F7         &kp F8          &kp F9             &kp F10
-&kp EQUAL              &kp N1          &kp N2          &kp N3         &kp N4         &kp N5                                                                                                             &kp N6  &kp N7         &kp N8         &kp N9          &kp N0             &kp MINUS
-&kp TAB                &kp Q           &kp W           &kp E          &kp R          &kp T                                                                                                              &kp Y   &kp U          &kp I          &kp O           &kp P              &kp BSLH
-&kp ESC                &HR_L5 LSHFT A  &HR_L4 LCTRL S  &HR_L3 LALT D  &HR_L2 LGUI F  &kp G                                                                                                              &kp H   &HR_R2 RGUI J  &HR_R3 RALT K  &HR_R4 RCTRL L  &HR_R5 RSHFT SEMI  &kp SQT
-&kp GRAVE              &kp Z           &kp X           &kp C          &kp V          &kp B  &kp LGUI(SPACE)     &kp LCTRL    &lower    &kp LGUI  &kp RCTRL        &CAPSWord_v1 RSHFT MACRO_PLACEHOLDER  &kp N   &kp M          &kp COMMA      &kp DOT         &kp FSLH           &kp PG_UP
- &magic LAYER_Magic 0  &kp HOME        &kp END         &kp LEFT       &kp RIGHT             &space_v2 4 SPACE   &kp DEL      &kp LALT  &kp RALT  &thumb_v2 7 RET  &thumb_v2 3 BSPC                              &kp UP         &kp DOWN       &kp LBKT        &kp RBKT           &kp PG_DN
+&kp F1                &kp F2          &kp F3          &kp F4         &kp F5                                                                                             &kp F6         &kp F7         &kp F8          &kp F9             &kp F10
+&kp ESC               &kp N1          &kp N2          &kp N3         &kp N4         &kp N5                                                                      &kp N6  &kp N7         &kp N8         &kp N9          &kp N0             &kp MINUS
+&kp TAB               &kp Q           &kp W           &kp E          &kp R          &kp T                                                                       &kp Y   &kp U          &kp I          &kp O           &kp P              &kp EQUAL
+&kp GRAVE             &HR_L5 LSHFT A  &HR_L4 LCTRL S  &HR_L3 LALT D  &HR_L2 LGUI F  &kp G                                                                       &kp H   &HR_R2 RGUI J  &HR_R3 RALT K  &HR_R4 RCTRL L  &HR_R5 RSHFT SEMI  &kp SQT
+&kp LSHFT             &kp Z           &kp X           &kp C          &kp V          &kp B  &kp LGUI(SPACE)  &kp LCTRL  &lower    &kp BLSH  &kp LBKT   &kp RBKT  &kp N   &kp M          &kp COMMA      &kp DOT         &kp FSLH           &kp RSHFT
+&magic LAYER_Magic 0  &kp HOME        &kp END         &kp LEFT       &kp RIGHT             &kp SPACE        &kp DEL    &kp LALT  &kp RALT  &kp RET    &kp BSPC          &kp LEFT       &kp UP         &kp RIGHT       &kp DOWN           &kp PG_DN
             >;
         };
 
