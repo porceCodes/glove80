@@ -77,7 +77,6 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &kp MINUS &kp GT>
-                , <&macro_tap &kp GT>
                 ;
         };
     };
@@ -113,7 +112,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LBRC &kp RBRC &kp LEFT>
+                = <&macro_press &kp LBRC &kp RBRC>
                 ;
         };
     };
@@ -868,8 +867,8 @@
 &to 0    &to 1  &to 2  &none  &none  &none                                             &none   &none     &none     &none      &none  &none
 &none    &none  &none  &none  &none  &none                                             &none   &kp PG_UP &kp UP    &kp PG_DN  &none  &none
 &none    &none  &none  &none  &none  &none                                             &none   &kp LEFT  &kp DOWN  &kp RIGHT  &none  &none
-&none    &none  &none  &none  &none  &none   &none  &none  &none   &none &none &none   &ppnter &pparen   &pbrce    &pbrkt     &pangl &none
-&none    &none  &none  &none  &none          &none  &none  &none   &none &none &none           &none     &none     &none      &none  &none
+&trans    &none  &none  &none  &none  &none   &none  &none  &none   &none &none &none   &ppnter &pparen   &pbrce    &pbrkt     &pangl &none
+&none    &trans  &trans  &trans  &trans          &none  &none  &none   &none &none &none           &trans     &none     &none      &none  &none
             >;
         };        
 
