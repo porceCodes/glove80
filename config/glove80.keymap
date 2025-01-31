@@ -76,10 +76,8 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp ->
-                , <&macro_press &kp LSHFT>
-                , <&macro_tap &kp .>
-                , <&macro_release &kp LSHFT>
+                = <&macro_tap &kp MINUS &kp GT>
+                , <&macro_tap &kp GT>
                 ;
         };
     };
@@ -91,12 +89,7 @@
         pparen: pparen {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LSHFT>
-                , <&macro_tap &kp 0>
-                , <&macro_tap &kp ->
-                , <&macro_release &kp LSHFT>
-                , <&macro_tap &kp LEFT>
+            bindings = <&macro_tap &kp LPAR &kp RPAR &kp LEFT>
                 ;
         };
     };
@@ -108,9 +101,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp [>
-                , <&macro_tap &kp ]>
-                , <&macro_tap &kp LEFT>
+                = <&macro_tap &kp LBKT &kp RBKT &kp LEFT>
                 ;
         };
     };
@@ -122,11 +113,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT>
-                , <&macro_tap &kp [>
-                , <&macro_tap &kp ]>
-                , <&macro_release &kp LSHFT>
-                , <&macro_tap &kp LEFT>
+                = <&macro_press &kp LBRC &kp RBRC &kp LEFT>
                 ;
         };
     };
@@ -138,11 +125,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT>
-                , <&macro_tap &kp ,>
-                , <&macro_tap &kp .>
-                , <&macro_release &kp LSHFT>
-                , <&macro_tap &kp LEFT>
+                = <&macro_press &kp LT &kp GT &kp LEFT>
                 ;
         };
     };
