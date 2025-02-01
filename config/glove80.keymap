@@ -112,7 +112,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LBRC &kp RBRC>
+                = <&macro_tap &kp LBRC &kp RBRC>
                 ;
         };
     };
@@ -124,7 +124,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LT &kp GT &kp LEFT>
+                = <&macro_tap &kp LT &kp GT &kp LEFT>
                 ;
         };
     };
