@@ -64,7 +64,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp LG(C)>, <&kp LG(F)>, <&kp LG(LS(H))>, <&kp LG(LA(H))>;
+            bindings = <&kp LG(C)>, <&kp LG(F)>, <&kp LG(X)>, <&kp LG(A)>;
         };
     };
 };
@@ -75,7 +75,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp LG(LC(LS(F)))>, <&kp LG(V)>, <&kp LG(X)>, <&kp LG(A)>;
+            bindings = <&kp LG(LC(LS(F)))>, <&kp LG(F)>, <&kp LG(LS(H))>, <&kp LG(LA(H))>;
         };
     };
 };
