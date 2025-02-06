@@ -60,11 +60,22 @@
 
 / {
     behaviors {
-        cpc: cpc {
+        copies: copies {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp LG(C)>, <&kp LG(V)>, <&kp LG(X)>, <&kp LG(A)>;
+            bindings = <&kp LG(C)>, <&kp LG(X)>>;
+        };
+    };
+};
+
+/ {
+    behaviors {
+        pastes: pastes {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LG(V)>, <&kp LG(A)>;
         };
     };
 };
@@ -851,12 +862,12 @@
         // porce
         layer_Homerow_Mods {
             bindings = <
-&kp F1       &kp F2           &kp F3          &kp F4         &kp F5                                                                                                                                   &kp F6         &kp F7         &kp F8          &kp F9             &kp F10
-&kp ESC      &ASFT N1         &ASFT N2        &ASFT N3       &ASFT N4       &ASFT N5                                                                                                         &ASFT N6 &ASFT N7       &ASFT N8       &ASFT N9        &ASFT N0           &ASFT BSLH
-&kp ESC      &kp Q            &kp W           &kp E          &kp R          &kp T                                                                                                            &kp Y    &kp U          &kp I          &kp O           &kp P              &ASFT SQT
-&ASFT GRAVE  &HR_L5 LSHFT A   &HR_L4 LCTRL S  &HR_L3 LALT D  &HR_L2 LGUI F  &kp G                                                                                                            &kp H    &HR_R2 RGUI J  &HR_R3 RALT K  &HR_R4 RCTRL L  &HR_R5 RSHFT SEMI  &kp COLON 
-&kp LSHFT    &kp Z            &kp X           &kp C          &kp V          &kp B      &kp LG(SPACE)  &magic LAYER_Magic 0  &bootloader    &bootloader   &kp LG(LC(N3))  &kp LG(LC(LS(N4)))  &kp N    &kp M          &ASFT COMMA    &ASFT DOT       &ASFT FSLH         &kp RSHFT
-&lower       &kp LSHFT        &kp LCTRL       &kp LALT       &kp LGUI                  &kp SPACE      &kp TAB               &kp LC(GRAVE)  &kp LG(LS(A))  &kp BSPC        &kp RET                     &mo 3          &cpc           &finds          &ASFT MINUS        &ASFT EQUAL       
+&kp F1       &kp F2           &kp F3          &kp F4         &kp F5                                                                                                                               &kp F6         &kp F7         &kp F8          &kp F9             &kp F10
+&kp ESC      &ASFT N1         &ASFT N2        &ASFT N3       &ASFT N4       &ASFT N5                                                                                                     &ASFT N6 &ASFT N7       &ASFT N8       &ASFT N9        &ASFT N0           &ASFT EQUAL
+&kp TAB      &kp Q            &kp W           &kp E          &kp R          &kp T                                                                                                        &kp Y    &kp U          &kp I          &kp O           &kp P              &ASFT MINUS
+&ASFT GRAVE  &HR_L5 LSHFT A   &HR_L4 LCTRL S  &HR_L3 LALT D  &HR_L2 LGUI F  &kp G                                                                                                        &kp H    &HR_R2 RGUI J  &HR_R3 RALT K  &HR_R4 RCTRL L  &HR_R5 RSHFT SEMI  &ASFT SQT 
+&kp LSHFT    &kp Z            &kp X           &kp C          &kp V          &kp B      &kp LG(SPACE)  &magic LAYER_Magic 0  &bootloader    &bootloader            &ASFT BSLH  &kp COLON  &kp N    &kp M          &ASFT COMMA    &ASFT DOT       &ASFT FSLH         &kp RSHFT
+&lower       &kp LSHFT        &kp LCTRL       &kp LALT       &kp LGUI                  &kp SPACE      &kp LC(GRAVE)         &kp LG(LC(N3)) &kp LG(LC(LS(N4)))     &kp BSPC    &kp RET             &mo 3          &finds         &copys          &pastes            &kp LG(LS(A))       
             >;
         };
 
