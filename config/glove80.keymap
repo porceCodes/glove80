@@ -32,7 +32,7 @@
 #define LAYER_Gaming 5
 #define LAYER_Lower 6
 #define LAYER_Mouse 7
-#define LAYER_Magic 8
+#define Lmagic 8
 
 /* To deal with the situation where there is no Lower layer, to keep &lower happy */
 #ifndef LAYER_Lower
@@ -862,12 +862,12 @@
         // porce
         layer_Homerow_Mods {
             bindings = <
-&kp F1       &kp F2           &kp F3          &kp F4         &kp F5                                                                                                                               &kp F6         &kp F7         &kp F8          &kp F9             &kp F10
-&kp ESC      &ASFT N1         &ASFT N2        &ASFT N3       &ASFT N4       &ASFT N5                                                                                                     &ASFT N6 &ASFT N7       &ASFT N8       &ASFT N9        &ASFT N0           &ASFT EQUAL
-&kp TAB      &kp Q            &kp W           &kp E          &kp R          &kp T                                                                                                        &kp Y    &kp U          &kp I          &kp O           &kp P              &ASFT MINUS
-&ASFT GRAVE  &HR_L5 LSHFT A   &HR_L4 LCTRL S  &HR_L3 LALT D  &HR_L2 LGUI F  &kp G                                                                                                        &kp H    &HR_R2 RGUI J  &HR_R3 RALT K  &HR_R4 RCTRL L  &HR_R5 RSHFT SEMI  &ASFT SQT 
-&kp LSHFT    &kp Z            &kp X           &kp C          &kp V          &kp B      &kp LG(SPACE)  &magic LAYER_Magic 0  &bootloader    &bootloader            &ASFT BSLH  &kp COLON  &kp N    &kp M          &ASFT COMMA    &ASFT DOT       &ASFT FSLH         &kp RSHFT
-&lower       &kp LSHFT        &kp LCTRL       &kp LALT       &kp LGUI                  &kp SPACE      &kp LC(GRAVE)         &kp LG(LC(N3)) &kp LG(LC(LS(N4)))     &kp BSPC    &kp RET             &mo 3          &finds         &copies         &pastes            &kp LG(LS(A))       
+&kp F1       &kp F2          &kp F3          &kp F4         &kp F5                                                                                                                    &kp F6         &kp F7         &kp F8          &kp F9             &kp F10
+&kp ESC      &ASFT N1        &ASFT N2        &ASFT N3       &ASFT N4       &ASFT N5                                                                                          &ASFT N6 &ASFT N7       &ASFT N8       &ASFT N9        &ASFT N0           &ASFT EQUAL
+&kp TAB      &kp Q           &kp W           &kp E          &kp R          &kp T                                                                                             &kp Y    &kp U          &kp I          &kp O           &kp P              &ASFT MINUS
+&ASFT GRAVE  &HR_L5 LSHFT A  &HR_L4 LCTRL S  &HR_L3 LALT D  &HR_L2 LGUI F  &kp G                                                                                             &kp H    &HR_R2 RGUI J  &HR_R3 RALT K  &HR_R4 RCTRL L  &HR_R5 RSHFT SEMI  &ASFT SQT 
+&kp LSHFT    &kp Z           &kp X           &kp C          &kp V          &kp B    &kp LC(GRAVE)  &magic Lmagic 0  &bootloader    &bootloader        &ASFT BSLH  &kp COLON  &kp N    &kp M          &ASFT COMMA    &ASFT DOT       &ASFT FSLH         &kp RSHFT
+&lower       &kp LSHFT       &kp LCTRL       &kp LALT       &kp LGUI                &kp SPACE      &kp LG(SPACE)    &kp LG(LC(N3)) &kp LG(LC(LS(N4))) &kp BSPC    &kp RET             &mo 3          &finds         &copies         &pastes            &kp LG(LS(A))       
             >;
         };
 
@@ -878,7 +878,7 @@
                &trans   &kp Q   &kp W   &kp E   &kp R   &kp T                                                   &kp Y   &kp U      &kp I     &kp O     &kp P   &kp BSLH
                &trans   &kp A   &kp S   &kp D   &kp F   &kp G                                                   &kp H   &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
             &kp GRAVE   &kp Z   &kp X   &kp C   &kp V   &kp B  &trans  &trans  &trans  &trans  &trans  &trans   &kp N   &kp M  &kp COMMA   &kp DOT  &kp FSLH     &trans
- &magic LAYER_Magic 0  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans     &trans  &kp LBKT  &kp RBKT     &trans
+ &magic Lmagic 0  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans     &trans  &kp LBKT  &kp RBKT     &trans
             >;
         };
 
@@ -889,7 +889,7 @@
                &trans   &ASFT Q   &ASFT W   &ASFT E   &ASFT R   &ASFT T                                                   &ASFT Y   &ASFT U      &ASFT I     &ASFT O     &ASFT P   &ASFT BSLH
                &trans   &ASFT A   &ASFT S   &ASFT D   &ASFT F   &ASFT G                                                   &ASFT H   &ASFT J      &ASFT K     &ASFT L  &ASFT SEMI    &ASFT SQT
      &ASFT GRAVE   &ASFT Z   &ASFT X   &ASFT C   &ASFT V   &ASFT B  &trans  &trans  &trans  &trans  &trans  &trans   &ASFT N   &ASFT M  &ASFT COMMA   &ASFT DOT  &ASFT FSLH            &trans
- &magic LAYER_Magic 0         &trans         &trans         &trans         &trans                 &trans  &trans  &trans  &trans  &trans  &trans                        &trans            &trans  &ASFT LBKT  &ASFT RBKT            &trans
+ &magic Lmagic 0         &trans         &trans         &trans         &trans                 &trans  &trans  &trans  &trans  &trans  &trans                        &trans            &trans  &ASFT LBKT  &ASFT RBKT            &trans
             >;
         };
 
@@ -933,7 +933,7 @@
                &trans         &none           &none    &kp UP_ARROW            &none    &kp END                                                  &kp RIGHT_PARENTHESIS   &kp KP_N7     &kp KP_N8     &kp KP_N9     &kp KP_MINUS   &kp SCROLLLOCK
                &trans         &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PG_UP                                                            &kp PERCENT   &kp KP_N4     &kp KP_N5     &kp KP_N6      &kp KP_PLUS            &none
                &trans     &kp K_APP           &none         &kp F11          &kp F12  &kp PG_DN  &trans  &trans   &to 0  &trans  &trans  &trans              &kp COMMA   &kp KP_N1     &kp KP_N2     &kp KP_N3     &kp KP_ENTER           &trans
- &magic LAYER_Magic 0      &kp CAPS         &kp INS         &kp F11          &kp F12             &trans  &trans  &trans  &trans  &trans  &trans                          &kp KP_N0     &kp KP_N0    &kp KP_DOT     &kp KP_ENTER           &trans
+ &magic Lmagic 0      &kp CAPS         &kp INS         &kp F11          &kp F12             &trans  &trans  &trans  &trans  &trans  &trans                          &kp KP_N0     &kp KP_N0    &kp KP_DOT     &kp KP_ENTER           &trans
             >;
         };
 
@@ -948,7 +948,7 @@
             >;
         };
 
-        layer_Magic {
+        Lmagic {
             bindings = <
  &mstr1_v1_TKZ    &mstr2_v1_TKZ            &none            &none            &none                                                                                  &none   &none   &none  &bt BT_CLR  &bt BT_CLR_ALL
          &to 0            &to 1            &to 2            &none            &none            &none                                                         &none   &none   &none   &none       &none           &none
