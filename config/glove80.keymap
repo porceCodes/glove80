@@ -109,7 +109,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp LG(A)>, &kp LG(LS(A));
+            bindings = <&kp LG(A)>, <&kp LG(LS(A))>;
         };
     };
 };
