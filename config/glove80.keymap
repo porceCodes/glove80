@@ -724,7 +724,7 @@
         HR_L2: HR_L2 {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <221>;
             bindings = <&kp>, <&kp>;
             flavor = "tap-preferred";
             quick-tap-ms = <300>;
@@ -737,7 +737,7 @@
         HR_L3: HR_L3 {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <221>;
             bindings = <&kp>, <&kp>;
             flavor = "tap-preferred";
             quick-tap-ms = <300>;
@@ -750,7 +750,7 @@
         HR_L4: HR_L4 {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <240>;
+            tapping-term-ms = <221>;
             bindings = <&kp>, <&kp>;
             flavor = "tap-preferred";
             quick-tap-ms = <300>;
@@ -763,7 +763,7 @@
         HR_L5: HR_L5 {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <221>;
             bindings = <&kp>, <&kp>;
             flavor = "tap-preferred";
             quick-tap-ms = <300>;
@@ -776,7 +776,7 @@
         HR_R2: HR_R2 {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <221>;
             bindings = <&kp>, <&kp>;
             flavor = "tap-preferred";
             quick-tap-ms = <300>;
@@ -789,7 +789,7 @@
         HR_R3: HR_R3 {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <221>;
             bindings = <&kp>, <&kp>;
             flavor = "tap-preferred";
             quick-tap-ms = <300>;
@@ -802,7 +802,7 @@
         HR_R5: HR_R5 {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <221>;
             bindings = <&kp>, <&kp>;
             flavor = "tap-preferred";
             quick-tap-ms = <300>;
@@ -816,7 +816,7 @@
         HR_R4: HR_R4 {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <221>;
             bindings = <&kp>, <&kp>;
             flavor = "tap-preferred";
             quick-tap-ms = <300>;
