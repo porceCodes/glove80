@@ -952,14 +952,6 @@ bindings = <
 >;
 };      
 
-&trans          &trans          &trans          &trans           &trans             &trans                                                                     &trans       &sk LSHFT     &sk LCTRL        &sk LALT         &sk LGUI    &trans
- &trans          &trans  &mkp LCLK    &mmv MOVE_UP  &mkp RCLK    &cur_CUT_v1_TKZ                                                            &cur_CUT_v1_TKZ  &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT    &trans
- &trans    &msc SCRL_UP  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &cur_COPY_v1_TKZ                                                           &cur_COPY_v1_TKZ           &none         &none           &none        &kp K_APP    &trans
- &trans  &msc SCRL_DOWN           &none           &none            &none  &cur_PASTE_v1_TKZ  &mkp MCLK  &kp K_APP  &mkp MB5  &trans  &trans  &trans  &cur_PASTE_v1_TKZ  &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &trans
- &trans          &trans          &trans          &trans           &trans                     &mkp LCLK  &mkp RCLK  &mkp MB4  &trans  &trans  &trans                          &mkp LCLK     &mkp RCLK       &mkp MCLK         &mkp MB4  &mkp MB5
- 
-
-
 layer_Lower {
 bindings = <
 &bt_0       &bt_1          &bt_2          &bt_3            &out OUT_USB                                                                                                  &trans        &trans        &trans         &bt BT_CLR   &bt BT_CLR_ALL
