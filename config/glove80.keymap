@@ -943,14 +943,21 @@ bindings = <
 
 layer_Cursor {
 bindings = <
-&kp F1       &kp F2          &kp F3          &kp F4         &kp F5                                                  &kp F6         &kp F7         &kp F8         &kp F9         &kp F10
-&to 0    &to 1   &to 2   &none   &none  &none                                                          &none        &none          &none          &none          &none          &none
-&none    &none   &none   &none   &none  &none                                                          &none        &kp PG_UP      &kp UP         &kp PG_DN      &none          &none
-&trans   &none   &none   &none   &none  &none                                                          &none        &kp LEFT       &kp DOWN       &kp RIGHT      &kp LG(LA(LC(LS(DOWN))))  &kp LG(LA(LC(LS(UP))))
-&trans   &none   &none   &none   &none  &none   &bootloader  &none  &trans  &none  &none  &bootloader  &ppnter      &pparen        &pbrce         &pbrkt         &pangl                    &kp LS(F1) 
-&trans   &trans  &trans  &trans  &trans         &trans       &trans &trans  &trans &trans &trans                    &trans         &kp LG(LA(LC(LS(UP))))    &kp LG(LA(LC(LS(DOWN))))      &kp LS(F1)  &kp LS(F2)
+&kp F1   &kp F2  &kp F3         &kp F4         &kp F5                                                                                             &kp F6         &kp F7         &kp F8         &kp F9         &kp F10
+&to 0    &to 1   &to 2          &none          &none           &none                                                                 &none        &none          &none          &none          &none          &none
+&none    &none   &mkp LCLK      &mmv MOVE_UP   &mkp RCLK       &none                                                                 &none        &kp PG_UP      &kp UP         &kp PG_DN      &none          &none
+&trans   &none   &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &none                                                                 &none        &kp LEFT       &kp DOWN       &kp RIGHT      &kp LG(LA(LC(LS(DOWN))))  &kp LG(LA(LC(LS(UP))))
+&trans   &none   &none          &none          &none           &none           &bootloader  &none  &trans &none  &none  &bootloader  &ppnter      &pparen        &pbrce         &pbrkt         &pangl                    &kp LS(F1) 
+&trans   &trans  &trans         &trans         &trans                          &trans       &trans &trans &trans &trans &trans                    &trans         &kp LG(LA(LC(LS(UP))))    &kp LG(LA(LC(LS(DOWN))))      &kp LS(F1)  &kp LS(F2)
 >;
 };      
+
+&trans          &trans          &trans          &trans           &trans             &trans                                                                     &trans       &sk LSHFT     &sk LCTRL        &sk LALT         &sk LGUI    &trans
+ &trans          &trans  &mkp LCLK    &mmv MOVE_UP  &mkp RCLK    &cur_CUT_v1_TKZ                                                            &cur_CUT_v1_TKZ  &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT    &trans
+ &trans    &msc SCRL_UP  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &cur_COPY_v1_TKZ                                                           &cur_COPY_v1_TKZ           &none         &none           &none        &kp K_APP    &trans
+ &trans  &msc SCRL_DOWN           &none           &none            &none  &cur_PASTE_v1_TKZ  &mkp MCLK  &kp K_APP  &mkp MB5  &trans  &trans  &trans  &cur_PASTE_v1_TKZ  &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &trans
+ &trans          &trans          &trans          &trans           &trans                     &mkp LCLK  &mkp RCLK  &mkp MB4  &trans  &trans  &trans                          &mkp LCLK     &mkp RCLK       &mkp MCLK         &mkp MB4  &mkp MB5
+ 
 
 
 layer_Lower {
@@ -1020,8 +1027,7 @@ bindings = <
  &trans          &trans          &trans          &trans           &trans                     &mkp LCLK  &mkp RCLK  &mkp MB4  &trans  &trans  &trans                          &mkp LCLK     &mkp RCLK       &mkp MCLK         &mkp MB4  &mkp MB5
             >;
         };
-
-        Lmagic {
+https://community.kp.org/downloads/15892_Summer%2BYouthEmploymentProgramSCALNCAL.pdf        Lmagic {
             bindings = <
  &mstr1_v1_TKZ    &mstr2_v1_TKZ            &none            &none            &none                                                                                  &none   &none   &none  &bt BT_CLR  &bt BT_CLR_ALL
          &to 0            &to 1            &to 2            &none            &none            &none                                                         &none   &none   &none   &none       &none           &none
