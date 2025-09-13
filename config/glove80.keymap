@@ -79,7 +79,7 @@
         };
     };
 };
- 
+
 
 / {
     behaviors {
@@ -231,6 +231,19 @@
         };
     };
 };
+
+/ {
+    macros {
+        grave3: grave3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp GRAVE &kp GRAVE &kp GRAVE>
+                ;
+        };
+    };
+};
+
 
 
 / {
@@ -440,7 +453,7 @@
 /* Automatically generated macro definitions */
 / {
     macros {
-    
+
         // AutoShift Helper- &AS main macro is chained to &AS_HT hold tap and &AS_Shifted macro - TailorKey
         AS_Shifted_v1_TKZ: AS_Shifted_v1_TKZ {
             label = "&AS_SHIFTED_V1_TKZ";
@@ -454,7 +467,7 @@
                 , <&macro_release>
                 , <&kp LSHFT>;
         };
-    
+
         // AutoShift (Assign &AS to a Key) - &AS main macro is chained to &AS_HT hold tap and &AS_Shifted macro - TailorKey
         ASFT: ASFT {
             label = "&ASFT";
@@ -472,7 +485,7 @@
                 , <&macro_param_1to2>
                 , <&AS_HT_v2_TKZ A A>;
         };
-    
+
         // Cursor Layer - Copy (Ctrl C) - TailorKey
         cur_COPY_v1_TKZ: cur_COPY_v1_TKZ {
             label = "&CUR_COPY_V1_TKZ";
@@ -480,7 +493,7 @@
             #binding-cells = <0>;
             bindings = <&kp LC(C)>;
         };
-    
+
         // Cursor Layer - Cut (Ctrl X) - TailorKey
         cur_CUT_v1_TKZ: cur_CUT_v1_TKZ {
             label = "&CUR_CUT_V1_TKZ";
@@ -488,7 +501,7 @@
             #binding-cells = <0>;
             bindings = <&kp LC(X)>;
         };
-    
+
         // Cursor Layer - Extent Line (seq) - TailorKey
         cur_EXTEND_LINE_v1_TKZ: cur_EXTEND_LINE_v1_TKZ {
             label = "&CUR_EXTEND_LINE_V1_TKZ";
@@ -498,7 +511,7 @@
             wait-ms = <1>;
             bindings = <&kp LS(END)>;
         };
-    
+
         // Cursor Layer - Extend Word (seq) - TailorKey
         cur_EXTEND_WORD_v1_TKZ: cur_EXTEND_WORD_v1_TKZ {
             label = "&CUR_EXTEND_WORD_V1_TKZ";
@@ -508,7 +521,7 @@
             wait-ms = <1>;
             bindings = <&kp LC(LS(RIGHT))>;
         };
-    
+
         // Cursor Layer - Find (Ctrl F) - TailorKey
         cur_FIND_v1_TKZ: cur_FIND_v1_TKZ {
             label = "&CUR_FIND_V1_TKZ";
@@ -516,7 +529,7 @@
             #binding-cells = <0>;
             bindings = <&kp LC(F)>;
         };
-    
+
         // Cursor Layer - Find Next (Ctrl G) - TailorKey
         cur_FNEXT_v1_TKZ: cur_FNEXT_v1_TKZ {
             label = "&CUR_FNEXT_V1_TKZ";
@@ -524,7 +537,7 @@
             #binding-cells = <0>;
             bindings = <&kp LC(G)>;
         };
-    
+
         // Cursor Layer - Find Prev (Ctrl Shift G) - TailorKey
         cur_FPREV_v1_TKZ: cur_FPREV_v1_TKZ {
             label = "&CUR_FPREV_V1_TKZ";
@@ -532,7 +545,7 @@
             #binding-cells = <0>;
             bindings = <&kp LS(LC(G))>;
         };
-    
+
         // Cursor Layer - Paste (Ctrl V) - TailorKey
         cur_PASTE_v1_TKZ: cur_PASTE_v1_TKZ {
             label = "&CUR_PASTE_V1_TKZ";
@@ -540,7 +553,7 @@
             #binding-cells = <0>;
             bindings = <&kp LC(V)>;
         };
-    
+
         // Cursor Layer - Redo (Ctrl Y) - TailorKey
         cur_REDO_v1_TKZ: cur_REDO_v1_TKZ {
             label = "&CUR_REDO_V1_TKZ";
@@ -548,7 +561,7 @@
             #binding-cells = <0>;
             bindings = <&kp LC(Y)>;
         };
-    
+
         // Cursor Layer - Selest All (Ctrl A) - TailorKey
         cur_SELECT_ALL_v1_TKZ: cur_SELECT_ALL_v1_TKZ {
             label = "&CUR_SELECT_ALL_V1_TKZ";
@@ -556,7 +569,7 @@
             #binding-cells = <0>;
             bindings = <&kp LC(A)>;
         };
-    
+
         // Cursor Layer - Select Line (seq) - TailorKey
         cur_SELECT_LINE_v1_TKZ: cur_SELECT_LINE_v1_TKZ {
             label = "&CUR_SELECT_LINE_V1_TKZ";
@@ -567,7 +580,7 @@
             bindings = <&kp HOME>
                 , <&kp LS(END)>;
         };
-    
+
         // Cursor Layer - Select None (seq) - TailorKey
         cur_SELECT_NONE_v1_TKZ: cur_SELECT_NONE_v1_TKZ {
             label = "&CUR_SELECT_NONE_V1_TKZ";
@@ -580,7 +593,7 @@
                 , <&kp RIGHT>
                 , <&kp LEFT>;
         };
-    
+
         // Cursor Layer - Select Word (seq) - TailorKey
         cur_SELECT_WORD_v1_TKZ: cur_SELECT_WORD_v1_TKZ {
             label = "&CUR_SELECT_WORD_V1_TKZ";
@@ -591,7 +604,7 @@
             bindings = <&kp LC(LEFT)>
                 , <&kp LC(LS(RIGHT))>;
         };
-    
+
         // Cursor Layer - Undo (Ctrl Z) - TailorKey
         cur_UNDO_v1_TKZ: cur_UNDO_v1_TKZ {
             label = "&CUR_UNDO_V1_TKZ";
@@ -599,7 +612,7 @@
             #binding-cells = <0>;
             bindings = <&kp LC(Z)>;
         };
-    
+
         // mod_tab_switcher_chord -  TailorKey
         mod_tab_chord_v2_TKZ: mod_tab_chord_v2_TKZ {
             label = "&MOD_TAB_CHORD_V2_TKZ";
@@ -621,10 +634,10 @@
                 , <&macro_param_2to1>
                 , <&mo MACRO_PLACEHOLDER>;
         };
-    
+
         // mod_tab_switcher - TailorKey
-        // 
-        // 
+        //
+        //
         mod_tab_v2_TKZ: mod_tab_v2_TKZ {
             label = "&MOD_TAB_V2_TKZ";
             compatible = "zmk,behavior-macro-one-param";
@@ -641,7 +654,7 @@
                 , <&macro_param_1to1>
                 , <&kp MACRO_PLACEHOLDER>;
         };
-    
+
         // macro string1 sample - Magic Layer F1 - Text output sample macro 1 "¡Hola!" - TailorKey
         mstr1_v1_TKZ: mstr1_v1_TKZ {
             label = "&MSTR1_V1_TKZ";
@@ -670,7 +683,7 @@
                 , <&kp SPACE>
                 , <&kp RET>;
         };
-    
+
         // macro string2 sample - Magic Layer F2 - Text output sample macro 2 "grammar check: <paste>" - TailorKey
         mstr2_v1_TKZ: mstr2_v1_TKZ {
             label = "&MSTR2_V1_TKZ";
@@ -812,7 +825,7 @@
         };
 
         // Homerow Mod for the right ring 1 - TailorKey
-        // 
+        //
         HR_R4: HR_R4 {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -932,34 +945,34 @@
         // porce
 layer_Homerow_Mods {
 bindings = <
-&kp F1       &kp F2          &kp F3          &kp F4         &kp F5                                                                                                         &kp F6         &kp F7         &kp F8          &kp F9             &kp F10
-&kp ESC      &ASFT N1        &ASFT N2        &ASFT N3       &ASFT N4       &ASFT N5                                                                               &ASFT N6 &ASFT N7       &ASFT N8       &ASFT N9        &ASFT N0           &ASFT EQUAL
-&kp TAB      &kp Q           &kp W           &kp E          &kp R          &kp T                                                                                  &kp Y    &kp U          &kp I          &kp O           &kp P              &ASFT MINUS
-&ASFT GRAVE  &HR_L5 LSHFT A  &HR_L4 LCTRL S  &HR_L3 LALT D  &HR_L2 LGUI F  &kp G                                                                                  &kp H    &HR_R2 RGUI J  &HR_R3 RALT K  &HR_R4 RCTRL L  &HR_R5 RSHFT SEMI  &ASFT SQT 
-&kp LSHFT    &kp Z           &kp X           &kp C          &kp V          &kp B    &kp LG(LC(SPACE)) &kp LG(Q)   &kp LG(W)     &capfull   &brush  &ASFT BSLH     &kp N    &kp M          &ASFT COMMA    &ASFT DOT       &ASFT FSLH         &kp RSHFT
-&lower       &kp LSHFT       &kp LCTRL       &kp LALT       &kp LGUI                &kp SPACE   &kp LG(SPACE)     &kp LC(GRAVE) &capsel    &kp BSPC   &kp RET              &mo 1          &copies        &pastes         &selects           &finds       
+&kp F1       &kp F2          &kp F3          &kp F4         &kp F5                                                                                                          &kp F6         &kp F7         &kp F8          &kp F9             &kp F10
+&kp ESC      &ASFT N1        &ASFT N2        &ASFT N3       &ASFT N4       &ASFT N5                                                                                &ASFT N6 &ASFT N7       &ASFT N8       &ASFT N9        &ASFT N0           &ASFT EQUAL
+&kp TAB      &kp Q           &kp W           &kp E          &kp R          &kp T                                                                                   &kp Y    &kp U          &kp I          &kp O           &kp P              &ASFT MINUS
+&mo 1        &HR_L5 LSHFT A  &HR_L4 LCTRL S  &HR_L3 LALT D  &HR_L2 LGUI F  &kp G                                                                                   &kp H    &HR_R2 RGUI J  &HR_R3 RALT K  &HR_R4 RCTRL L  &HR_R5 RSHFT SEMI  &ASFT SQT
+&kp LSHFT    &kp Z           &kp X           &kp C          &kp V          &kp B    &kp LC(GRAVE) &kp LG(Q)   &kp LG(W)  &capfull   &brush          &ASFT BSLH     &kp N    &kp M          &ASFT COMMA    &ASFT DOT       &ASFT FSLH         &kp RSHFT
+&ASFT GRAVE  &kp LSHFT       &kp LCTRL       &kp LALT       &kp LGUI                &kp SPACE     &kp BSPC    &lower     &capsel    &kp LG(SPACE)   &kp RET                 &mo 1          &copies        &pastes         &selects           &finds
 >;
 };
 
 layer_Cursor {
 bindings = <
-&kp F11  &kp F12 &kp F13        &kp F14        &kp F15                                                                                            &kp F6         &kp F7         &kp F8         &kp F9         &kp F10
-&to 0    &to 1   &to 2          &none          &none           &none                                                                 &none        &none          &none          &none          &none          &none
-&none    &none   &mkp LCLK      &mmv MOVE_UP   &mkp RCLK       &none                                                                 &none        &kp PG_UP      &kp UP         &kp PG_DN      &none          &none
-&trans   &none   &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &none                                                                 &none        &kp LEFT       &kp DOWN       &kp RIGHT      &kp LG(LA(LC(LS(DOWN))))  &kp LG(LA(LC(LS(UP))))
-&trans   &none   &none          &none          &none           &none           &bootloader  &none  &trans &none  &none  &bootloader  &ppnter      &pparen        &pbrce         &pbrkt         &pangl                    &kp LS(F1) 
-&trans   &trans  &trans         &trans         &trans                          &trans       &trans &trans &trans &trans &trans                    &trans         &kp LG(LA(LC(LS(UP))))    &kp LG(LA(LC(LS(DOWN))))      &kp LS(F1)  &kp LS(F2)
+&kp F11  &kp F12 &kp F13        &kp F14        &kp F15                                                                                       &kp F6         &kp F7         &kp F8         &kp F9         &kp F10
+&to 0    &to 1   &to 2          &none          &none           &none                                                                 &none   &none          &none          &none          &none          &none
+&none    &none   &mkp LCLK      &mmv MOVE_UP   &mkp RCLK       &none                                                                 &none   &kp PG_UP      &kp UP         &kp PG_DN      &none          &none
+&trans   &none   &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &none                                                                 &none   &kp LEFT       &kp DOWN       &kp RIGHT      &grave3        &kp LG(LA(LC(LS(UP))))
+&trans   &none   &none          &none          &none           &none           &none  &trans &bootloader &bootloader &none  &none    &ppnter &pparen        &pbrce         &pbrkt         &pangl                    &kp LS(F1)
+&trans   &trans  &trans         &trans         &trans                          &trans &trans &trans      &trans      &trans &trans           &trans         &kp LG(LA(LC(LS(UP))))    &kp LG(LA(LC(LS(DOWN))))      &kp LS(F1)  &kp LS(F2)
 >;
-};      
+};
 
 layer_Lower {
 bindings = <
-&bt_0    &bt_1       &bt_2          &bt_3            &out OUT_USB                                                                                                  &trans        &trans        &trans         &bt BT_CLR   &bt BT_CLR_ALL
-&to 0    &to 1       &to 2          &none            &none            &kp HOME                                                             &kp LEFT_PARENTHESIS    &kp KP_NUM    &kp EQUAL     &kp KP_SLASH   &trans       &trans
-&trans   &none       &none          &kp UP_ARROW     &none            &kp END                                                              &kp RIGHT_PARENTHESIS   &kp KP_N7     &kp KP_N8     &kp KP_N9      &trans       &trans
-&trans   &none       &kp LEFT_ARROW &kp DOWN_ARROW   &kp RIGHT_ARROW  &kp PG_UP                                                            &kp PERCENT             &kp KP_N4     &kp KP_N5     &kp KP_N6      &kp KP_PLUS  &kp KP_MINUS
-&trans   &kp K_APP   &none          &kp F11          &kp F12          &kp PG_DN  &bootloader  &trans  &to 0   &trans  &trans  &trans       &kp COMMA               &kp KP_N1     &kp KP_N2     &kp KP_N3      &kp KP_SLASH &kp KP_MULTIPLY
-&trans   &trans      &trans         &trans           &trans                      &trans       &trans  &trans  &trans  &trans  &trans                               &kp KP_N0     &kp KP_DOT    &kp KP_ENTER   &trans       &trans
+&bt_0    &bt_1       &bt_2          &bt_3            &out OUT_USB                                                                                               &trans        &trans        &trans         &bt BT_CLR   &bt BT_CLR_ALL
+&to 0    &to 1       &to 2          &none            &none            &kp HOME                                                          &kp LEFT_PARENTHESIS    &kp KP_NUM    &kp EQUAL     &kp KP_SLASH   &trans       &trans
+&trans   &none       &none          &kp UP_ARROW     &none            &kp END                                                           &kp RIGHT_PARENTHESIS   &kp KP_N7     &kp KP_N8     &kp KP_N9      &trans       &trans
+&trans   &none       &kp LEFT_ARROW &kp DOWN_ARROW   &kp RIGHT_ARROW  &kp PG_UP                                                         &kp PERCENT             &kp KP_N4     &kp KP_N5     &kp KP_N6      &kp KP_PLUS  &kp KP_MINUS
+&trans   &kp K_APP   &none          &kp F11          &kp F12          &kp PG_DN  &trans &to 0  &bootloader &bootloader &trans  &trans   &kp COMMA               &kp KP_N1     &kp KP_N2     &kp KP_N3      &kp KP_SLASH &kp KP_MULTIPLY
+&trans   &trans      &trans         &trans           &trans                      &trans &trans &trans      &trans      &trans  &trans                           &kp KP_N0     &kp KP_DOT    &kp KP_ENTER   &trans       &trans
 >;
 };
 
@@ -984,7 +997,7 @@ bindings = <
  &magic Lmagic 0         &trans         &trans         &trans         &trans                 &trans  &trans  &trans  &trans  &trans  &trans                        &trans            &trans  &ASFT LBKT  &ASFT RBKT            &trans
             >;
         };
-  
+
 
         layer_Symbol {
             bindings = <
