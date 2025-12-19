@@ -109,7 +109,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp LG(LA(A))>, <&kp LG(LA(F))> ;
+            bindings = <&kp LG(LS(A))>, <&kp LG(LA(F))> ;
         };
     };
 };
@@ -968,7 +968,7 @@ bindings = <
 layer_Lower {
 bindings = <
 &out OUT_USB   &bt_0    &bt_1       &bt BT_CLR       &bt BT_CLR_ALL                                                                                             &trans        &trans        &trans         &bt_2        &bt_3
-&to 0    &to 1       &to 2          &none            &none            &kp HOME                                                          &kp LEFT_PARENTHESIS    &kp KP_NUM    &kp EQUAL     &kp KP_SLASH   &trans       &trans
+&to 0    &to 1       &to 2          &none            &none            &kp HOME                                                          &kp LEFT_PARENTHESIS    &kp KP_NUM    &kp EQUAL     &kp KP_SLASH   &trans       &trans    
 &trans   &none       &none          &kp UP_ARROW     &none            &kp END                                                           &kp RIGHT_PARENTHESIS   &kp KP_N7     &kp KP_N8     &kp KP_N9      &trans       &trans
 &trans   &none       &kp LEFT_ARROW &kp DOWN_ARROW   &kp RIGHT_ARROW  &kp PG_UP                                                         &kp PERCENT             &kp KP_N4     &kp KP_N5     &kp KP_N6      &kp KP_PLUS  &kp KP_MINUS
 &trans   &kp K_APP   &none          &kp F11          &kp F12          &kp PG_DN  &trans &to 0  &bootloader &bootloader &trans  &trans   &kp COMMA               &kp KP_N1     &kp KP_N2     &kp KP_N3      &kp KP_SLASH &kp KP_MULTIPLY
